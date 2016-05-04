@@ -1,0 +1,24 @@
+{
+  "name": "react-d3-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server & npm run build",
+    "build": "webpack -w",
+    "server": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1",
+    "webpack": "^1.13.0",
+    "d3": "^3.5.16",
+    "webpack-stream": "^3.2.0"
+  }
+}
