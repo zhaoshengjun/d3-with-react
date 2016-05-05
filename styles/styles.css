@@ -1,9 +1,41 @@
-.node {
-  stroke: #fff;
-  stroke-width: 1.5px;
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+html, body {
+  height: 100%;
 }
 
-.link {
-  stroke: #999;
-  stroke-opacity: .6;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+}
+
+.loading {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-top: 0.25rem solid white;
+  border-left: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-right: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.25rem solid rgba(255, 255, 255, 0.2);
+  animation: spinner 1s infinite linear;
+}
+.chart {
+  font-size: 0.7em;
+}
+.bar {
+  background-color: darkred;
+  color: white;
+  height: 3em;
+  line-height: 3em;
+  padding-right: 1em;
+  margin-bottom: 2px;
+  text-align: right;
 }

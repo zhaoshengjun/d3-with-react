@@ -1,8 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import ForceLayout from './ForceLayout';
+
+import TrafficChart from './traffic-chart';
+
 
 ReactDOM.render(
-  <ForceLayout width={800} height={660} />,
+  <TrafficChart url='../data/plaza_traffic.json' width={800} height={600} />,
   document.getElementById('root')
 );
